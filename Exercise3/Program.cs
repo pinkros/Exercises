@@ -2,7 +2,7 @@
 int input = 0;
 Console.WriteLine("Skriv ett heltal:");
 
-//While loop för att kunna testa koden flera gånger på samma gång, samma med loopVar i if-satserna. 
+//While loop för att kunna testa koden flera gånger på samma gå, samma med loopVar i if-satserna. 
 //while (input != 666)
 //{
     while (loopVar == 0)
