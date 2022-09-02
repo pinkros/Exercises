@@ -65,7 +65,19 @@ while (true)
 switch (opera) 
 { 
     case '+':
+        result = num1 + num2;
+        break;
+    case '-':
+        result = num1 - num2;
+        break;
+    case '*':
+        result = num1 * num2;
+        break;
+    case '/':
+        result = num1 / num2;
+        break;
 }
 
+Console.WriteLine($"Resultatet är: {num1} {opera} {num2} = {result}");
 Console.WriteLine("kthxbai");
 Console.ReadLine();
