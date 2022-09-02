@@ -14,7 +14,6 @@ while (true)
     try
     {
         input = Int32.Parse(Console.ReadLine());
-
     }
 
     catch 
