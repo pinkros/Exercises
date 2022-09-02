@@ -46,14 +46,26 @@ while (true)
     Console.WriteLine("Det var inte rätt! Använde du små bokstäver?");
 }
 
-mDiff = mValue1 - mValue2;
-
-if (mDiff < 0)
+if (mValue1 > mValue2)
 {
-    mDiff = Math.Abs(mDiff);
+    mValue1 -= 12;
 }
 
-Console.WriteLine($"Det är {mDiff} månader mellan {maanad1} och {maanad2}");
+
+ mDiff = mValue1 - mValue2;
+
+ if (mDiff < 0)
+ {
+     mDiff = Math.Abs(mDiff);
+ }
+
+ if (mDiff == 1)
+{
+    Console.WriteLine($"Det är {mDiff} månad mellan {maanad1} och {maanad2}");
+}
+
+else { Console.WriteLine($"Det är {mDiff} månader mellan {maanad1} och {maanad2}"); }
+
 
 static int MonthValueFinder( string maanad, string[] maanader ) 
 {
