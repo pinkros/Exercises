@@ -32,7 +32,12 @@ while (true)
 
     maanad2 = Console.ReadLine();
 
-    if (maanad2 == Array.Find(maanader, element => element == maanad2))
+    if (maanad1 == maanad2)
+    {
+        Console.WriteLine("Olika månader, sa jag!");
+    }
+
+    else if (maanad2 == Array.Find(maanader, element => element == maanad2))
     {
         mValue2 = MonthValueFinder(maanad2, maanader);
         break;
