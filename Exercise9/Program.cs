@@ -8,10 +8,56 @@
 // Programmet skriver ut att det var rätt och avslutas.
 Random rnd = new Random();
 
-var secretNum = rnd.Next(0, 100);
+var secretNum = rnd.Next(1, 100);
 var guessNum = 0;
 
-do { 
+while (true)
+{
+    Console.WriteLine("Gissa ett tal mellan 1 och 100!");
 
-    
-} while (guessNum != secretNum);
+
+    while (true)
+    {
+        string input = Console.ReadLine();
+
+        if (int.TryParse(input, out guessNum))
+        {
+            if (guessNum < 100 || guessNum > 0)
+            {
+                break;
+
+            }
+        }
+        Console.WriteLine("Det var inte vad jag bad om!");
+
+    }
+
+    while (guessNum != secretNum)
+    {
+        while (true)
+        {
+            string input = Console.ReadLine();
+
+            if (int.TryParse(input, out guessNum))
+            {
+                if (guessNum < 100 || guessNum > 0)
+                {
+                    break;
+
+                }
+            }
+            Console.WriteLine("Det var inte vad jag bad om!");
+        }
+
+        if (guessNum < secretNum)
+        {
+            Console.WriteLine("För lågt!\nProva igen!");
+        }
+        else
+        {
+            Console.WriteLine("För högt!\nProva igen!");
+        }
+    }
+    break;
+}
+Console.WriteLine($"Du gissade {guessNum} och talet var {secretNum}. Grattis!");
