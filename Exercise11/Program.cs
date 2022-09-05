@@ -26,13 +26,20 @@ if (input.Length == 1)
 
 else 
 {
-    
     for (int i = 0; i < input.Length; i++)
     {
+        
         //varför funkar dt inte??? :'(
-        output += numbers[input[i]];
+        output += numbers[(input[i] - '0')];
         output += "-";
     }
+
+    //for (int i = 0; i < input.Length; i++)
+    //{
+    //    //varför funkar dt inte??? :'(
+    //    output += numbers[input[i]];
+    //    output += "-";
+    //}
 }
 
 
