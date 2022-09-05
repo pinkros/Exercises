@@ -54,12 +54,12 @@ if (mValue1 > mValue2)
 
  mDiff = mValue1 - mValue2;
 
- if (mDiff < 0)
- {
-     mDiff = Math.Abs(mDiff);
- }
+if (mDiff < 0)
+{
+    mDiff = Math.Abs(mDiff);
+}
 
- if (mDiff == 1)
+if (mDiff == 1)
 {
     Console.WriteLine($"Det är {mDiff} månad mellan {maanad1} och {maanad2}");
 }

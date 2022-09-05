@@ -6,5 +6,5 @@ var count = 1;
 for (int i = 0; i < 16; i++)
 {
     Console.WriteLine(count);
-    count = count*2;
+    count *= 2;
 }
