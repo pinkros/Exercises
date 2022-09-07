@@ -29,7 +29,7 @@ else
     for (int i = 0; i < input.Length; i++)
     {
         
-        //varför funkar dt inte??? :'(
+        //varför funkar dt???
         output += numbers[(input[i] - '0')];
         output += "-";
     }
