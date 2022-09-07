@@ -30,7 +30,7 @@ while (true)
     
     for (int i = 0; i < input.Length; i++)
     {
-        if (i == input.Length -1)
+        if (i == input.Length - 1)
         {
             output += numbers[int.Parse(input[i] + "")];
             break;
