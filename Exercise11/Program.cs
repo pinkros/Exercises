@@ -3,7 +3,7 @@
 //Använd arrayen för att skriva ut siffrans ord. Ex. Inmatning “3” => “tre”.
 //Extra utmaning: Användaren kan mata in en sträng med fritt antal siffror, om man skriver in t.ex 432 så svarar programmet: “fyra - tre - två”.
 
-string[] numbers = new string[10] {"noll", "ett", "två", "tre", "fyra", "fem", "sex", "sju", "åtta", "nio"};
+string[] numbers = new string[10] { "noll", "ett", "två", "tre", "fyra", "fem", "sex", "sju", "åtta", "nio" };
 int nmbr;
 string input, output = "";
 while (true)
@@ -11,7 +11,7 @@ while (true)
     Console.WriteLine("skriv ett tal:");
     input = Console.ReadLine();
     if (int.TryParse(input, out nmbr)) { break; }
-    else 
+    else
     {
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("ett TAL, sa jag");
@@ -19,28 +19,27 @@ while (true)
     }
 }
 
-if (input.Length == 1)
-{
-    output = numbers[nmbr];
-}
+    //for (int i = 0; i < input.Length; i++)
+    //{
 
-else 
-{
+    //    //varför funkar dt???
+    //    output += numbers[(input[i] - '0')];
+    //    output += "-";
+    //}
+
+    
     for (int i = 0; i < input.Length; i++)
     {
-        
-        //varför funkar dt???
-        output += numbers[(input[i] - '0')];
+        if (i == input.Length -1)
+        {
+            output += numbers[int.Parse(input[i] + "")];
+            break;
+        }
+        //varför funkar dt inte??? :'(
+        output += numbers[int.Parse(input[i]+"")];
         output += "-";
     }
 
-    //for (int i = 0; i < input.Length; i++)
-    //{
-    //    //varför funkar dt inte??? :'(
-    //    output += numbers[input[i]];
-    //    output += "-";
-    //}
-}
 
 
 Console.WriteLine(output);
