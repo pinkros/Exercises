@@ -8,10 +8,18 @@
 
 Console.WriteLine("Hello, World!");
 
+Console.ReadLine();
 
-void DrawBox(int width, int height)
+var box = DrawBox(5, 5);
+
+
+Print2DArray(box);
+
+string[,] DrawBox(int width, int height)
 {
-	Console.Clear();
+
+	string[,] box = new string[height, width];
+	
 
 	for (int i = 0; i < height; i++)
 	{
@@ -19,19 +27,49 @@ void DrawBox(int width, int height)
 		{
 			for (int j = 0; j < width; j++)
 			{
-				Console.Write("#");
+				 box[i,j] = "#";
 			}
-			Console.Write("\n");
+			
 		}
 
 		else
 		{
-			Console.Write("#");
-			for (int j = 0; j < width - 2; j++)
+			
+			for (int j = 0; j < width; j++)
 			{
-				Console.Write("-");
+				if (j==0)
+				{
+					box[i, j] = "#";
+				}
+
+				else if (j == width - 1)
+				{
+					box[i, j] = "#";
+				}
+
+				else
+				{
+					box[i, j] = "-";
+				}
 			}
-			Console.Write("#\n");
+			
 		}
+		
 	}
+
+
+    Console.Clear();
+	return box;
+}
+
+void Print2DArray<T>(T[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            Console.Write(matrix[i, j] + " ");
+        }
+        Console.WriteLine();
+    }
 }
