@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-31T09:39:58.503Z" agent="5.0 (Windows)" etag="mDk-N9JfFqLkq9d9eTyi" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-31T09:43:10.899Z" agent="5.0 (Windows)" etag="TTjNw2gZ1s9SAn5Y511C" version="20.5.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1171" dy="713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -88,7 +88,7 @@
         <mxCell id="okhYOCGnKRkmCclTNQ3m-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;rounded=1;fontColor=#46495D;" parent="okhYOCGnKRkmCclTNQ3m-28" vertex="1">
           <mxGeometry y="78" width="230" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="mFGvawNEaxa4jL375zHz-1" value="+ GetRandomQuestion(type): Question" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;fontColor=#46495D;" vertex="1" parent="okhYOCGnKRkmCclTNQ3m-28">
+        <mxCell id="mFGvawNEaxa4jL375zHz-1" value="+ GetRandomQuestion(): Question" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;fontColor=#46495D;" vertex="1" parent="okhYOCGnKRkmCclTNQ3m-28">
           <mxGeometry y="86" width="230" height="26" as="geometry" />
         </mxCell>
         <mxCell id="mFGvawNEaxa4jL375zHz-2" value="+ AddQuestion(string, int, string[])" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;fontColor=#46495D;" vertex="1" parent="okhYOCGnKRkmCclTNQ3m-28">
@@ -124,7 +124,7 @@
         <mxCell id="mFGvawNEaxa4jL375zHz-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#788AA3;rounded=1;fontColor=#46495D;" vertex="1" parent="mFGvawNEaxa4jL375zHz-9">
           <mxGeometry y="52" width="230" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="mFGvawNEaxa4jL375zHz-41" value="+ OnCurrentVewModelCHanged" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;fontColor=#46495D;" vertex="1" parent="mFGvawNEaxa4jL375zHz-9">
+        <mxCell id="mFGvawNEaxa4jL375zHz-41" value="+ OnCurrentVewModelCHanged()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=1;fontColor=#46495D;" vertex="1" parent="mFGvawNEaxa4jL375zHz-9">
           <mxGeometry y="60" width="230" height="26" as="geometry" />
         </mxCell>
         <mxCell id="mFGvawNEaxa4jL375zHz-40" value="«event»" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#46495D;" vertex="1" parent="mFGvawNEaxa4jL375zHz-9">
